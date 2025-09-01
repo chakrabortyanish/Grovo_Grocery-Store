@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Dancing+Script:wght@400..700&family=Fleur+De+Leah&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libertinus+Mono&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rouge+Script&display=swap");
+
+header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  margin-right: 8px;
+  padding: 3px;
+}
+
+.menu-icon:hover {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.menu-container {
+  font-size: 1rem;
+  position: absolute;
+  width: 200px;
+  background-color: #f1f1f1;
+  padding: 10px 0;
+  top: 60px;
+  left: 10px;
+  z-index: 100;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+}
+
+.menu-container li a{
+  color: rgb(30, 30, 30);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.menu-container li {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
+  width: 100%;
+  margin: 5px 0;
+  border-radius: 7px;
+}
+
+.menu-container li:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.heading img {
+  width: 50px;
+}
+
+.heading h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  background: linear-gradient(
+    90deg,
+    #ff4b1f,
+    #ff9068,
+    #ffed00,
+    #00c9ff,
+    #92fe9d,
+    #f953c6
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.links ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.links ul a {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(42, 42, 42);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 0;
+}
+
+.links ul a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: black;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-out;
+}
+
+.links ul a:hover::after {
+  transform: scaleX(1);
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart,
+.cart .icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart span {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  right: -7px;
+  top: -8px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: rgb(255, 102, 102);
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.acc {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 20px;
+  background: linear-gradient(90deg, #00eeff 0%, #00ff08 100%);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .heading img {
+    width: 40px;
+  }
+
+  .heading h1 {
+    font-size: 1.5rem;
+  }
+
+  ul a {
+    font-size: 0.9rem;
+  }
+
+  .acc {
+    font-size: 0.8rem;
+    padding: 3px 7px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 15px 10px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .heading img {
+    width: 30px;
+  }
+
+  .heading {
+    gap: 2px;
+  }
+
+  .heading h1 {
+    font-size: 1.3rem;
+  }
+
+  header .links {
+    display: none;
+  }
+
+  .right-side {
+    gap: 10px;
+  }
+
+  .cart span {
+    height: 15px;
+    width: 15px;
+    font-size: 0.7rem;
+    right: -5px;
+    top: -6px;
+  }
+}
