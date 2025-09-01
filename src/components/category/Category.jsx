@@ -2,7 +2,7 @@ import React from "react";
 import "./Category.css";
 
 import {
-  vegetables,
+  apple0,
   medicine,
   baby,
   beauty,
@@ -28,7 +28,7 @@ const Category = () => {
         <h3>Stationary</h3>
       </div>
       <div className="item">
-        <img src={vegetables} alt="office" className="category-image"/>
+        <img src={apple0} alt="office" className="category-image"/>
         <h3>Stationary</h3>
       </div>
       <div className="item">
