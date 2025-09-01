@@ -7,7 +7,7 @@ import medicine from "./images/images/medicine.png";
 import baby from "./images/images/baby.png";
 import beauty from "./images/images/beauty.png";
 import office from "./images/images/office.png";
-import vegetable from "./images/images/vegetables.png";
+import vegetables from "./images/vegetables.png";
 import Gardening from "./images/images/Gardening.png";
 
 // product images
@@ -59,7 +59,7 @@ export {
   baby,
   beauty,
   office,
-  vegetable,
+  vegetables,
   Gardening,
   apple,
   chili,

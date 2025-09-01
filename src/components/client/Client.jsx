@@ -10,30 +10,31 @@ import { client1, client2, client3 } from "../../assets/index.js";
 
 const Client = () => {
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    pauseOnHover: true,
-    arrows: false,
-    responsive: [
+ const settings = {
+  dots: true,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  pauseOnHover: true,
+  arrows: false,
+  responsive: [
     {
-      breakpoint: 1024, 
+      breakpoint: 1024,
       settings: {
         slidesToShow: 2,
       },
     },
     {
-      breakpoint: 600,
+      breakpoint: 768,
       settings: {
         slidesToShow: 1,
       },
-    }
-  ]
-  };
+    },
+  ],
+};
+
 
   return (
     <div className="client">
